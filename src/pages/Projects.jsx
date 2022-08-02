@@ -1,10 +1,10 @@
 import React from "react";
-
+import ProjectSection from "../components/ProjectSection";
+import { ProjectObjOne } from "../components/ProjectSection/Data";
 function Projects() {
   return (
     <>
-      <div className="projects">Projects</div>
-      <a href="https://trainsquare.azurewebsites.net/">Trainsquare</a>
+      <ProjectSection {...ProjectObjOne} />
     </>
   );
 }

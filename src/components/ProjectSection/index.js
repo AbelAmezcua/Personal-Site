@@ -1,8 +1,7 @@
 import React from "react";
-import { Button } from "../ButtonElement";
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img, BtnWrap } from "./infoElements";
+import { ProjectButton, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img, BtnWrap } from "./ProjectElements";
 
-const InfoSection = ({ link, size, lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt, buttonLabel, primary, dark }) => {
+const ProjectSection = ({ link, size, lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt, buttonLabel, primary, dark }) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -14,9 +13,9 @@ const InfoSection = ({ link, size, lightBg, id, imgStart, topLine, lightText, he
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to={link} primary={primary} dark={dark}>
+                  <ProjectButton href={link} primary={primary} dark={dark}>
                     {buttonLabel}
-                  </Button>
+                  </ProjectButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -32,4 +31,4 @@ const InfoSection = ({ link, size, lightBg, id, imgStart, topLine, lightText, he
   );
 };
 
-export default InfoSection;
+export default ProjectSection;
